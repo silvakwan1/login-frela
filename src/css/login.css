@@ -1,0 +1,61 @@
+@import url(./global.css);
+
+.container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0 1.5rem;
+}
+
+.card-forms {
+  background: #fff;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 25px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 1.5rem;
+}
+
+.forms-register {
+  display: none;
+}
+.card-btn {
+  background: linear-gradient(transparent, #fff);
+  height: 2rem;
+  width: 80%;
+  border-radius: 0 0 1rem 1rem;
+  outline: none;
+  border: none;
+
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  position: absolute;
+  bottom: -2rem;
+}
+
+.card-forms .forms-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & .login-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.forms-register.active {
+  display: block;
+}
+
+.forms-login.remove {
+  display: none;
+}
