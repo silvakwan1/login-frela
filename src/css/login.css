@@ -39,6 +39,24 @@
   position: absolute;
   bottom: -2rem;
 }
+.forms-login--img {
+  height: 4rem;
+  width: 4rem;
+
+  position: relative;
+  align-self: center;
+
+  & img {
+    position: absolute;
+    top: -3rem;
+    height: 100%;
+    width: 100%;
+
+    padding: 1rem;
+    background: #222;
+    border-radius: 100%;
+  }
+}
 
 .card-forms .forms-login form {
   display: flex;
