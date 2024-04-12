@@ -15,14 +15,14 @@
   position: relative;
 
   display: flex;
-  justify-content: center;
 
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.2rem;
 }
 
 .forms-register {
   display: none;
 }
+
 .card-btn {
   background: linear-gradient(transparent, #fff);
   height: 2rem;
@@ -47,9 +47,47 @@
 
   & .login-text {
     display: flex;
-    flex-direction: column;
     gap: 1rem;
+    font-size: 0.9rem;
   }
+}
+
+.forms-login--btn {
+  display: flex;
+  justify-content: end;
+
+  & button {
+    background: green;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+
+    border: none;
+    outline: none;
+  }
+}
+
+.login-password,
+.login-email {
+  height: 1.5rem;
+  display: flex;
+
+  border: #222 1px solid;
+  background: #444;
+
+  & input {
+    border: none;
+    outline: none;
+    background: transparent;
+
+    padding-left: 10px;
+  }
+}
+
+.login-password--img,
+.login-email--img {
+  height: 1.4rem;
+  padding-left: 5px;
 }
 
 .forms-register.active {
